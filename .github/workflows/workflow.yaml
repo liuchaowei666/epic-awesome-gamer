@@ -24,8 +24,3 @@ jobs:
     - name: Setup GIT user
       uses: fregante/setup-git-user@v1
 
-    - name: Cache browser context
-      run: |
-        git add .
-        git commit -m "Automated deployment @ $(date '+%Y-%m-%d %H:%M:%S') Asia/Shanghai" 
-        git push -f
